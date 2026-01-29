@@ -22,7 +22,7 @@ This list combines the following sources:
 
 ## 🔄 Updates
 
-The list is automatically updated **every hour** to ensure the list stays up-to-date.
+The list is automatically updated **every hour** to ensure it stays up-to-date.
 
 ## 📥 Usage
 
