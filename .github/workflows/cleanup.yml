@@ -2,7 +2,7 @@ name: Cleanup
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Run once every day at midnight
+    - cron: '30 0 * * *' # Run once every day at 00:30
   workflow_dispatch:
 
 jobs:
