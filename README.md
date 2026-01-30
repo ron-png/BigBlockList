@@ -1,4 +1,4 @@
-# 🛡️ BigBlockList
+# 🛡️ UltimateBlockList
 
 **A balanced DNS blocklist designed for a seamless web experience.**
 
