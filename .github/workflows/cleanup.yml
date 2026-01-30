@@ -48,7 +48,8 @@ jobs:
                   echo "Removing old entry: $line"
                 fi
               else
-                 echo "Removing entry without date: $line"
+                 # If no date found, add the current date
+                 echo "$line # $(date +%Y-%m-%d)" >> do_not_block_temporary.tmp
               fi
             done < do_not_block_temporary
             
