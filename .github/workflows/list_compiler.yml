@@ -36,7 +36,7 @@ jobs:
           echo $new_version > version.txt
 
           # Create Header
-          echo "! Title: BigBlockList" > header.txt
+          echo "! Title: UltimateDNSBlockList" > header.txt
           echo "! Version: $new_version" >> header.txt
           echo "! Last modified: $(date -u +"%Y-%m-%dT%H:%M:%SZ")" >> header.txt
           echo "! License: https://github.com/${{ github.repository }}/blob/main/LICENSE" >> header.txt
@@ -77,7 +77,7 @@ jobs:
           echo "! Count: $line_count" >> header.txt
           
           # Final Output
-          cat header.txt combined_cleaned.txt > list/bigblocklist.txt
+          cat header.txt combined_cleaned.txt > list/UltimateDNSBlockList.txt
           
           # Cleanup
           rm combined_temp.txt combined_unsorted.txt combined_cleaned.txt header.txt
@@ -87,9 +87,9 @@ jobs:
         run: |
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'actions@github.com'
-          git add list/bigblocklist.txt version.txt
+          git add list/UltimateDNSBlockList.txt version.txt
           if [[ -n $(git status -s) ]]; then
-            git commit -m "Update bigblocklist.txt to version $(cat version.txt)"
+            git commit -m "Update UltimateDNSBlockList.txt to version $(cat version.txt)"
             git push
           else
             echo "No changes to commit"
